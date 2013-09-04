@@ -14,3 +14,5 @@ Many thanks...
   - Pretty number formatting (\usepackage[osf]{mathpazo})
   - More prettifying (\usepackage{microtype}, \usepackage[english]{babel})
   - In-line links to articles/reference, such as for the afformentioned commands.
+
+Also included my comparable Word2010 resume so you can compare/contrast the typesetting between LaTeX and Word.
