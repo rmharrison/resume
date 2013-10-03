@@ -1,0 +1,267 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+% From http://www.rpi.edu/dept/arc/training/latex/resumes/
+
+\documentclass[margin]{res} 
+
+% Geometry package doesn't work with res margin option
+%\usepackage[margin=1.0in]{geometry} 
+%\topmargin=-0.5in
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+%\itemsep=0in
+%\parsep=0in
+
+\addtolength{\textheight}{3cm}
+%\addtolength{\voffset}{-1cm}
+
+%\oddsidemargin=-1in
+%\headsep=0pt
+%\headheight=0pt
+%\topmargin=-1in
+
+%\usepackage[cm]{fullpage}
+%\pagestyle{empty}
+
+% the margin option causes section titles to appear to the left of body text 
+\textwidth=5.2in % increase textwidth to get smaller right margin
+% Font details here: http://www.tug.dk/FontCatalogue/lmodern/
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage[osf]{mathpazo}
+%\renewcommand*\familydefault{\ttdefault}
+%\renewcommand*\familydefault{\sfdefault} 
+
+\usepackage{microtype}
+\usepackage[english]{babel}
+
+
+\usepackage{enumitem}
+%\usepackage{layout}
+
+% List and enumeration
+\usepackage{enumitem}
+\setitemize{itemsep=1pt,topsep=1pt,parsep=1pt,partopsep=1pt}
+
+
+% Customizations
+% From: https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html
+\newcommand{\locdatesubsection}[3]{\textbf{#1} (#2) \hfill #3}
+\newcommand{\nblocdatesubsection}[3]{#1 (#2) \hfill #3 }
+\newcommand{\nbdatesubsection}[2]{#1 \hfill #2 }
+
+
+% Multiline comments: http://tex.stackexchange.com/questions/87303/multi-line-block-comments-in-latex
+\long\def\/*#1*/{}
+
+%\newcommand{\datedsubsection}[2]{%
+%\subsection[#1]{#1 \hfill #2}%
+%}
+
+% Unbold description label: http://www.latex-community.org/forum/viewtopic.php?f=44&t=4204
+%\renewcommand*\descriptionlabel[1]{\hspace\labelsep\itshape #1}
+
+
+%\renewcommand\floatpagefraction{.9}
+%\renewcommand\topfraction{.9}
+%\renewcommand\bottomfraction{.9}
+%\renewcommand\textfraction{.1}   
+%\setcounter{totalnumber}{50}
+%\setcounter{topnumber}{50}
+%\setcounter{bottomnumber}{50}
+
+
+
+
+\begin{document} 
+\begin{sloppypar}
+%\layout{}
+ 
+\name{\textbf{\textsf{Ryan M Harrison}}\\ \\} % the \\[12pt] adds a blank line after name
+ 
+% res package only supports two resumes -- Updated it to support three.
+
+\address{2115 Cloville Avenue\\
+         Baltimore, MD 21214\\
+         \texttt{+}1 443 257 5953}
+\address{\texttt{ryan.m.harrison@gmail.com}\\
+         \texttt{linkedin.com/in/rmharri}\\
+         \texttt{github.com/rmharrison}}
+\address{Wolfson College\\ 
+         Oxford OX2 6UD\\
+         \texttt{+}44 07523 229446}
+
+\begin{resume} 
+%\noindent\rule{5.2in}{0.75pt}
+\setlength{\parskip}{1.00ex}
+\setlength{\parindent}{0pt}
+ 
+\section{Education} 
+\locdatesubsection{University of Oxford}{Oxford, UK}{Expected 2014}\\
+DPhil in Biological Physics. Wolfson College.
+%(NSF Graduate Research Fellow)
+
+%\begin{itemize}[leftmargin=*] % No indent on bullets
+\begin{itemize}
+\item Molecular simulation of DNA
+    \begin{itemize}
+    \item Spearhead automated testing initiative to reduce scientific and build errors.
+    \item Simulation software maintenance in \texttt{C++}; analysis suite in \texttt{Python}.
+    \end{itemize}
+\item Single-molecule fluorescence
+    \begin{itemize}
+    \item Image processing and time series analysis with \textsc{\texttt{MATLAB}}. 
+    %\item Mentored pre-doctoral minority students. Two completing advanced degrees.
+    \end{itemize}
+\end{itemize}
+
+% Technical Resume
+%\item Molecular simulation of DNA
+%    \begin{itemize}
+%    \item Coarse-grained DNA modeling, including various rare event methods.
+%    \item Simulation software in \texttt{C++}; analysis suite in \texttt{Python}. Testing taskmaster.
+%    \end{itemize}
+%\item Single-molecule fluorescence on DNA helicase
+%    \begin{itemize}
+%    \item \textsc{TIRF-FRET} studies of the RecQ DNA helicase.
+%    \item Image processing and time series analysis with \textsc{\texttt{MATLAB}}. 
+%    \item Extensive wetlab experience, spanning culture, purification and QC.
+%    \end{itemize}
+%\end{itemize}
+
+
+% Old resume...(Submitted to McKinsey June 2013)
+%\begin{description}
+%\item[Molecular simulation] \hfill \\
+%Coarse-grained DNA modeling, including various rare event methods. Simulation software in \texttt{C++}; analysis suite in \texttt{Python}. Testing taskmaster.
+%\item[Single-molecule fluorescence] \hfill \\
+%TIRF-FRET studies of the RecQ DNA helicase. Signal processing and analysis in \textsc{\texttt{MATLAB}}. Extensive wetlab experience, including bacterial culture, protein purification and characterization/quality-control.
+%\end{description}
+
+
+\locdatesubsection{Johns Hopkins University}{Baltimore, MD}{December 2009}\\
+Bachelor of Science in Biomedical Engineering; Minor in Economics. %GPA: 3.26/4.00
+\begin{itemize}
+\item Treasurer, JHU Engineers without Borders (2006-2009)
+    \begin{itemize}
+        \item Setup financial reporting structure for international engineering development organization with \$100k/yr turnover. Teams operating in 3 countries.
+        %\item Accounting, budget, internal quarterly and external annual reports.
+    \end{itemize}
+\item Cultural Liaison, Student Activities Commission (2007-2009)
+    \begin{itemize}
+    \item \$500k oversight for 150+ student groups. Directly responsible for 22 cultural.
+    \end{itemize}
+\end{itemize}
+
+\locdatesubsection{Danish Institute for Study Abroad}{Copenhagen, Denmark}{Fall 2009}\\
+International Business \& Economics Program.
+
+% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+\section{Skills}
+   \begin{tabular}{l p{3in}}
+    \underline{Preferred:} & \texttt{Python}, \texttt{C++}, \textsc{\texttt{MATLAB}} \\
+    %\underline{Other:} & \textsc{\texttt{MATLAB}}, \texttt{Ruby}, \texttt{R} \\
+    \underline{Toolchains:} & Linux (\texttt{vim}), Microsoft (\texttt{VisualStudio}) \\
+    \underline{Versioning a must:} & \texttt{svn}, \texttt{git} \\
+    \underline{Ask about:} & Refactoring and testing scientific code. \\
+    Experience in corporate Agile environment.
+\end{tabular}
+
+\section{Software}
+\locdatesubsection{NaturalMotion}{Oxford, UK}{Summer 2013}
+\begin{itemize}
+\item Delivered specification and implementation of R\&D project for the Morpheme procedural animation engine. Non-technical live-demo to key stakeholders.
+\item Agile development in \texttt{C++} with Microsoft toolchain.
+\end{itemize}
+%Technical
+%\begin{itemize}
+%\item R\&D for the Morpheme procedural animation engine. 
+%\item Agile development in \texttt{C++} with Microsoft toolchain.
+%\end{itemize}
+
+\locdatesubsection{Ginkgo BioWorks}{Boston, MA}{Jan -- May 2010}
+\begin{itemize}
+\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
+%\item Developed web apps to speed up prototyping of engineered biological systems. 
+\item Software exceeded milestone payment requirements of industrial partner.
+%\item Collaborated with lab for further pipeline speedups from hardware integration.
+%\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
+%\item Collaborated with lab to quickly iterate builds and do hardware integration.
+%\item Developed \texttt{Django} and \texttt{Ruby on Rails} apps for rapidly prototyping engineered biological systems. Exceeded milestone payment requirements.
+%\item Collaborated directly with lab scientist to develop software specifications, quickly iterate builds and assist with hardware integration.
+\end{itemize}
+
+\locdatesubsection{Ion Torrent Systems}{Guilford, CT}{Summer 2009}
+\begin{itemize}
+\item Hardware tester to improve performance of next-gen DNA sequencer prototype.
+%\item Took the initiative to write an app to track improvements in system performance.
+\item Wrote desktop \texttt{Pyjamas}/\texttt{PyQT} app to track improvements in system performance.
+%\item System optimization and benchmarking on a next generation DNA sequencer.
+%\item Wrote desktop \texttt{Pyjamas}/\texttt{PyQT} app to analyse quality and track improvement.
+\end{itemize}
+
+\locdatesubsection{Computational Proteomics Research Asst}{Baltimore, MD}{2003 -- 2007}
+\begin{itemize}
+%\item Developed a model for pH-sensitive regions within proteins; \texttt{C++} implementation in Rosetta protein structure suite, with analysis in \texttt{Perl} and \texttt{R}.
+\item \texttt{C++} developer for Rosetta protein structure suite. Analysis tools with \texttt{Perl} and \texttt{R}.
+\item Mentored high school student with interest in protein structure prediction.
+\end{itemize}
+
+%\section{Policy}
+%\locdatesubsection{Maryland General Assembly}{Annapolis, MD}{Spring 2009}
+%\begin{itemize}
+%\item Prepared testimony, policy memos, and statements for a Baltimore City Delegate.
+%\item Coordinated with stakeholders to amend legislation, including meeting with constituents and succinctly communicating actionable concerns to delegate.
+%\end{itemize}
+%
+%\locdatesubsection{Baltimore City Health Department}{Baltimore, MD}{Fall 2007}
+%\begin{itemize}
+%\item Analyst for the 2008 Baltimore City Health Status Report. 
+%%\item Prepared policy memoranda on drug decriminalization and teen-smoking abatement.
+%%\item Aided in the execution of an Influenza monitoring initiative (establishing a quantitative baseline-metric) and a youth anti-smoking campaign (public relations).
+%\item Aided flu monitoring (quantitative) and anti-smoking campaign (public relations).
+%\end{itemize}
+
+
+\section{Training}
+\nbdatesubsection{Facebook London Hackathon}{Apr 2013} \\
+%\nbdatesubsection{CECAM Molecular Simulation Course}{Jan 2013} \\
+%\nbdatesubsection{Marine Biological Lab Optical Microscopy Course}{Oct 2011} \\
+%\nbdatesubsection{University of Oxford Student Consultancy}{Winter 2013} \\
+\nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012/2013} \\
+%\nbdatesubsection{Mid-Atlantic Biotech Conference (Volunteer)}{Sept 2012} \\
+\nbdatesubsection{Mid-Atlantic Venture Association Capital Connection (Volunteer)}{May 2012}
+%\nbdatesubsection{NIH Science Policy Group}{2011/2012} 
+
+% Full dates
+%\nbdatesubsection{Facebook London Hackathon}{27--28 Apr 2013} \\
+%\nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012/2013} \\
+%\nbdatesubsection{CECAM Molecular Simulation Course}{7--18 Jan 2013} \\
+%\nbdatesubsection{Mid-Atlantic Biotech Conference (Volunteer)}{27--28 Sept 2012} \\
+%\nbdatesubsection{NIH Science Policy Group}{2011/2012} \\
+%\nbdatesubsection{Mid-Atlantic Venture Association Capital Connection (Volunteer)}{23--24 May 2012} \\
+%\nbdatesubsection{Marine Biological Lab Optical Microscopy Course}{11--21 Oct 2011} \\
+
+
+\section{Honors}
+\nblocdatesubsection{NIH Graduate Student Research Award}{Travel Award}{2011} \\
+\nblocdatesubsection{National Science Foundation Graduate Research Fellow}{3 year, \$120k}{2010} \\
+\nblocdatesubsection{Inductee, National Gallery for America's Young Inventors}{\$5k}{2006} \\
+\nblocdatesubsection{5th Place, Intel Science Talent Search}{\$25k}{2005}
+
+\section{Hobby}
+bow ties / allotment gardening / technical theater (lighting)
+%bow ties $\bullet$ allotment gardening $\bullet$ light design $\bullet$ technical theater
+
+
+
+\end{resume} 
+\end{sloppypar}
+\end{document} 
+
+
+
