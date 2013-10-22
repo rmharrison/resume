@@ -4,78 +4,7 @@
 
 \documentclass[margin]{res} 
 
-% Geometry package doesn't work with res margin option
-%\usepackage[margin=1.0in]{geometry} 
-%\topmargin=-0.5in
-%\oddsidemargin -.5in
-%\evensidemargin -.5in
-%\textwidth=6.0in
-%\itemsep=0in
-%\parsep=0in
-
-\addtolength{\textheight}{3cm}
-%\addtolength{\voffset}{-1cm}
-
-%\oddsidemargin=-1in
-%\headsep=0pt
-%\headheight=0pt
-%\topmargin=-1in
-
-%\usepackage[cm]{fullpage}
-%\pagestyle{empty}
-
-% the margin option causes section titles to appear to the left of body text 
-\textwidth=5.2in % increase textwidth to get smaller right margin
-% Font details here: http://www.tug.dk/FontCatalogue/lmodern/
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-%\usepackage[osf]{mathpazo}
-%\renewcommand*\familydefault{\ttdefault}
-%\renewcommand*\familydefault{\sfdefault} 
-
-\usepackage{microtype}
-\usepackage[english]{babel}
-
-
-\usepackage{enumitem}
-%\usepackage{layout}
-
-% List and enumeration
-\usepackage{enumitem}
-\setitemize{itemsep=1pt,topsep=1pt,parsep=1pt,partopsep=1pt}
-
-
-% Customizations
-% From: https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html
-\newcommand{\locdatesubsection}[3]{\textbf{#1} (#2) \hfill #3}
-\newcommand{\nblocdatesubsection}[3]{#1 (#2) \hfill #3 }
-\newcommand{\nbdatesubsection}[2]{#1 \hfill #2 }
-
-
-% Multiline comments: http://tex.stackexchange.com/questions/87303/multi-line-block-comments-in-latex
-\long\def\/*#1*/{}
-
-%\newcommand{\datedsubsection}[2]{%
-%\subsection[#1]{#1 \hfill #2}%
-%}
-
-% Unbold description label: http://www.latex-community.org/forum/viewtopic.php?f=44&t=4204
-%\renewcommand*\descriptionlabel[1]{\hspace\labelsep\itshape #1}
-
-
-%\renewcommand\floatpagefraction{.9}
-%\renewcommand\topfraction{.9}
-%\renewcommand\bottomfraction{.9}
-%\renewcommand\textfraction{.1}   
-%\setcounter{totalnumber}{50}
-%\setcounter{topnumber}{50}
-%\setcounter{bottomnumber}{50}
-
-
-
+\include{preambleResume}
 
 \begin{document} 
 \begin{sloppypar}
@@ -85,15 +14,7 @@
  
 % res package only supports two resumes -- Updated it to support three.
 
-\address{2115 Cloville Avenue\\
-         Baltimore, MD 21214\\
-         \texttt{+}1 443 257 5953}
-\address{\texttt{ryan.m.harrison@gmail.com}\\
-         \texttt{linkedin.com/in/rmharri}\\
-         \texttt{github.com/rmharrison}}
-\address{Wolfson College\\ 
-         Oxford OX2 6UD\\
-         \texttt{+}44 07523 229446}
+\include{headerResume}
 
 \begin{resume} 
 %\noindent\rule{5.2in}{0.75pt}
@@ -101,18 +22,19 @@
 \setlength{\parindent}{0pt}
  
 \section{Education} 
-\locdatesubsection{University of Oxford}{Oxford, UK}{Expected 2014}\\
-DPhil in Biological Physics. Wolfson College.
+\nblocdatesubsection{University of Oxford}{Oxford, UK}{Expected 2014}\\
+\textbf{DPhil in Computational Biophysics}. Wolfson College.
 %(NSF Graduate Research Fellow)
 
 %\begin{itemize}[leftmargin=*] % No indent on bullets
 \begin{itemize}
-\item Molecular simulation of DNA
+\item Molecular simulation of DNA modeling
     \begin{itemize}
-    \item Spearhead automated testing initiative to reduce scientific and build errors.
-    \item Simulation software maintenance in \texttt{C++}; analysis suite in \texttt{Python}.
+        \item Spearhead \textbf{integration testing} to reduce scientific and build errors.
+        \item Simulation \textbf{software maintenance} in \texttt{C++}; analysis suite in \texttt{Python}.
+        \item Familiar with molecular dynamics, monte carlo and rare event methods.
     \end{itemize}
-\item Single-molecule fluorescence
+\item Single-molecule fluorescence: molecular biology, optics and data processing
     \begin{itemize}
     \item Image processing and time series analysis with \textsc{\texttt{MATLAB}}. 
     %\item Mentored pre-doctoral minority students. Two completing advanced degrees.
@@ -143,26 +65,18 @@ DPhil in Biological Physics. Wolfson College.
 %\end{description}
 
 
-\locdatesubsection{Johns Hopkins University}{Baltimore, MD}{December 2009}\\
+\nblocdatesubsection{Johns Hopkins University}{Baltimore, MD}{December 2009}\\
 Bachelor of Science in Biomedical Engineering; Minor in Economics. GPA: 3.26/4.00
-\begin{itemize}
-\item Treasurer, JHU Engineers without Borders (2006-2009)
     \begin{itemize}
-        \item Setup financial reporting structure for international engineering development organization with \$100k/yr turnover. Teams operating in 3 countries.
-        %\item Accounting, budget, internal quarterly and external annual reports.
+        \item International summer research experience in Japan. 2 patent applications.
     \end{itemize}
-%\item Cultural Liaison, Student Activities Commission (2007-2009)
-%    \begin{itemize}
-%    \item \$500k oversight for 150+ student groups. Directly responsible for 22 cultural.
-%    \end{itemize}
-\end{itemize}
 
-\locdatesubsection{Danish Institute for Study Abroad}{Copenhagen, Denmark}{Fall 2009}\\
-International Business \& Economics Program.
-\begin{itemize}
-    \item Cultural immersion through homestay and language training (15--20 hrs/wk). 
-    %\item Corporate finance and business strategy coursework.
-\end{itemize}
+\nblocdatesubsection{Danish Institute for Study Abroad}{Copenhagen, Denmark}{Fall 2009}\\
+International Business Program.
+    \begin{itemize}
+        \item Cultural immersion through homestay and language training (15 hrs/wk). 
+        %\item Corporate finance and business strategy coursework.
+    \end{itemize}
 
 % Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
 \section{Skills}
@@ -175,11 +89,11 @@ International Business \& Economics Program.
                            & Experience in corporate Agile environment.
 \end{tabular}
 
-\section{Software}
-\locdatesubsection{NaturalMotion}{Oxford, UK}{Summer 2013}
+\section{Experience}
+\nblocdatesubsection{NaturalMotion}{Oxford, UK}{Summer 2013}
 \begin{itemize}
 \item Delivered specification and implementation of R\&D project for the Morpheme procedural animation engine. Non-technical live-demo to key stakeholders.
-\item Agile development in \texttt{C++} with Microsoft toolchain.
+\item \textbf{Agile development} in \texttt{C++} with Microsoft toolchain.
 \end{itemize}
 %Technical
 %\begin{itemize}
@@ -187,11 +101,11 @@ International Business \& Economics Program.
 %\item Agile development in \texttt{C++} with Microsoft toolchain.
 %\end{itemize}
 
-\locdatesubsection{Ginkgo BioWorks}{Boston, MA}{Jan -- May 2010}
+\nblocdatesubsection{Ginkgo BioWorks}{Boston, MA}{Jan -- May 2010}
 \begin{itemize}
 \item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
 %\item Developed web apps to speed up prototyping of engineered biological systems. 
-\item Software exceeded milestone payment requirements of industrial partner.
+\item \textbf{Exceeded software milestones} for payments from industrial partner.
 %\item Collaborated with lab for further pipeline speedups from hardware integration.
 %\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
 %\item Collaborated with lab to quickly iterate builds and do hardware integration.
@@ -199,30 +113,30 @@ International Business \& Economics Program.
 %\item Collaborated directly with lab scientist to develop software specifications, quickly iterate builds and assist with hardware integration.
 \end{itemize}
 
-\locdatesubsection{Ion Torrent Systems}{Guilford, CT}{Summer 2009}
-\begin{itemize}
-\item Hardware tester to improve performance of next-gen DNA sequencer prototype.
-%\item Took the initiative to write an app to track improvements in system performance.
-\item Wrote desktop \texttt{Pyjamas} app to track improvements in system performance.
-%\item System optimization and benchmarking on a next generation DNA sequencer.
-%\item Wrote desktop \texttt{Pyjamas}/\texttt{PyQT} app to analyse quality and track improvement.
-\end{itemize}
+%\nblocdatesubsection{Ion Torrent Systems}{Guilford, CT}{Summer 2009}
+%\begin{itemize}
+%\item Hardware tester to improve performance of next-gen DNA sequencer prototype.
+%%\item Took the initiative to write an app to track improvements in system performance.
+%\item Wrote desktop \texttt{Pyjamas} app to track improvements in system performance.
+%%\item System optimization and benchmarking on a next generation DNA sequencer.
+%%\item Wrote desktop \texttt{Pyjamas}/\texttt{PyQT} app to analyse quality and track improvement.
+%\end{itemize}
 
-\locdatesubsection{Computational Proteomics Research Asst}{Baltimore, MD}{2003 -- 2007}
+\nblocdatesubsection{Proteomics Research Developer}{Baltimore, MD}{2003 -- 2007}
 \begin{itemize}
 %\item Developed a model for pH-sensitive regions within proteins; \texttt{C++} implementation in Rosetta protein structure suite, with analysis in \texttt{Perl} and \texttt{R}.
 \item \texttt{C++} developer for Rosetta protein structure suite. Analysis tools with \texttt{Perl} and \texttt{R}.
-\item Mentored high school student with interest in protein structure prediction.
+\item \textbf{Mentored} high school student with interest in protein structure prediction.
 \end{itemize}
 
 %\section{Policy}
-%\locdatesubsection{Maryland General Assembly}{Annapolis, MD}{Spring 2009}
+%\nblocdatesubsection{Maryland General Assembly}{Annapolis, MD}{Spring 2009}
 %\begin{itemize}
 %\item Prepared testimony, policy memos, and statements for a Baltimore City Delegate.
 %\item Coordinated with stakeholders to amend legislation, including meeting with constituents and succinctly communicating actionable concerns to delegate.
 %\end{itemize}
 %
-%\locdatesubsection{Baltimore City Health Department}{Baltimore, MD}{Fall 2007}
+%\nblocdatesubsection{Baltimore City Health Department}{Baltimore, MD}{Fall 2007}
 %\begin{itemize}
 %\item Analyst for the 2008 Baltimore City Health Status Report. 
 %%\item Prepared policy memoranda on drug decriminalization and teen-smoking abatement.
@@ -231,7 +145,7 @@ International Business \& Economics Program.
 %\end{itemize}
 
 
-\section{Training}
+\section{Extracurricular}
 
 \nbdatesubsection{Facebook London Hackathon}{Apr 2013}
     \begin{itemize}
@@ -245,8 +159,18 @@ International Business \& Economics Program.
 
 \nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012/2013}
     \begin{itemize}
-            \item Coursework on start-up finance, legal and IP.
+            \item Start-up finance, valuation, legal and IP coursework.
     \end{itemize}
+
+%\nbdatesubsection{Executive Treasurer, JHU Engineers without Borders}{2006-2009}
+%    \begin{itemize}
+%        \item Setup financial reporting structure for engineering development organization with \$100k/yr turnover. Financial oversight for teams operating in 3 countries.
+%    \end{itemize}
+
+%\item Cultural Liaison, Student Activities Commission (2007-2009)
+%    \begin{itemize}
+%    \item \$500k oversight for 150+ student groups. Directly responsible for 22 cultural.
+%    \end{itemize}
 
 %\nbdatesubsection{Volunteer, Mid-Atlantic Venture Capital and Biotech Conferences}{May/Sept 2012}
 %    \begin{itemize}

@@ -4,77 +4,7 @@
 
 \documentclass[margin]{res} 
 
-% Geometry package doesn't work with res margin option
-%\usepackage[margin=1.0in]{geometry} 
-%\topmargin=-0.5in
-%\oddsidemargin -.5in
-%\evensidemargin -.5in
-%\textwidth=6.0in
-%\itemsep=0in
-%\parsep=0in
-
-\addtolength{\textheight}{3cm}
-%\addtolength{\voffset}{-1cm}
-
-%\oddsidemargin=-1in
-%\headsep=0pt
-%\headheight=0pt
-%\topmargin=-1in
-
-%\usepackage[cm]{fullpage}
-%\pagestyle{empty}
-
-% the margin option causes section titles to appear to the left of body text 
-\textwidth=5.2in % increase textwidth to get smaller right margin
-% Font details here: http://www.tug.dk/FontCatalogue/lmodern/
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-%\usepackage[osf]{mathpazo}
-%\renewcommand*\familydefault{\ttdefault}
-%\renewcommand*\familydefault{\sfdefault} 
-
-\usepackage{microtype}
-\usepackage[english]{babel}
-
-
-\usepackage{enumitem}
-%\usepackage{layout}
-
-% List and enumeration
-\usepackage{enumitem}
-\setitemize{itemsep=1pt,topsep=1pt,parsep=1pt,partopsep=1pt}
-
-
-% Customizations
-% From: https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html
-\newcommand{\locdatesubsection}[3]{\textbf{#1} (#2) \hfill #3}
-\newcommand{\nblocdatesubsection}[3]{#1 (#2) \hfill #3 }
-\newcommand{\nbdatesubsection}[2]{#1 \hfill #2 }
-\newcommand{\datesubsection}[2]{\textbf{#1} \hfill #2 }
-
-
-% Multiline comments: http://tex.stackexchange.com/questions/87303/multi-line-block-comments-in-latex
-\long\def\/*#1*/{}
-
-%\newcommand{\datedsubsection}[2]{%
-%\subsection[#1]{#1 \hfill #2}%
-%}
-
-% Unbold description label: http://www.latex-community.org/forum/viewtopic.php?f=44&t=4204
-%\renewcommand*\descriptionlabel[1]{\hspace\labelsep\itshape #1}
-
-
-%\renewcommand\floatpagefraction{.9}
-%\renewcommand\topfraction{.9}
-%\renewcommand\bottomfraction{.9}
-%\renewcommand\textfraction{.1}   
-%\setcounter{totalnumber}{50}
-%\setcounter{topnumber}{50}
-%\setcounter{bottomnumber}{50}
-
+\include{preambleResume}
 
 
 
@@ -86,15 +16,18 @@
  
 % res package only supports two resumes -- Updated it to support three.
 
-\address{2115 Cloville Avenue\\
-         Baltimore, MD 21214\\
-         \texttt{+}1 443 257 5953}
-\address{\texttt{ryan.m.harrison@gmail.com}\\
-         \texttt{linkedin.com/in/rmharri}\\
-         \texttt{github.com/rmharrison}}
-\address{Wolfson College\\ 
-         Oxford OX2 6UD\\
-         \texttt{+}44 07523 229446}
+%\address{2115 Cloville Avenue\\
+%         Baltimore, MD 21214\\
+%         \texttt{+}1 443 257 5953}
+%\address{\texttt{ryan.m.harrison@gmail.com}\\
+%         \texttt{linkedin.com/in/rmharri}\\
+%         \texttt{github.com/rmharrison}}
+%\address{Wolfson College\\ 
+%         Oxford OX2 6UD\\
+%         \texttt{+}44 07523 229446}
+
+% No typewritter font
+\include{headerResume}
 
 \begin{resume} 
 %\noindent\rule{5.2in}{0.75pt}
@@ -102,15 +35,18 @@
 \setlength{\parindent}{0pt}
  
 \section{Education} 
-\locdatesubsection{University of Oxford}{Oxford, UK}{Expected 2014}\\
-DPhil in Biological Physics. Wolfson College.
+\nblocdatesubsection{University of Oxford}{Oxford, UK}{Expected 2014}\\
+%DPhil in Biological Physics. Wolfson College.
+\textbf{DPhil in Computational Biophysics}. Wolfson College.
 %(NSF Graduate Research Fellow)
 
-%\begin{itemize}[leftmargin=*] % No indent on bullets
 \begin{itemize}
-\item Managed an international collaboration between the US National Institutes of Health and the University of Oxford.
-\item Spearhead automated testing initiative to reduce scientific and build errors.
+    \item \href{http://oxcam.gpp.nih.gov/}{NIH-Oxford Scholar}. Int'l collaboration with US National Institutes of Health.
+%    \item NIH-Oxford Scholar. Managed international collaboration between the US National Institutes of Health and the University of Oxford.
+%    \item Spearhead automated code testing initiative to reduce scientific and build errors.
+\end{itemize}
 
+%\begin{itemize}[leftmargin=*] % No indent on bullets
 %\item Molecular simulation of DNA
 %    \begin{itemize}
 %    \end{itemize}
@@ -118,7 +54,6 @@ DPhil in Biological Physics. Wolfson College.
 %    %\begin{itemize}
 %    %\item Mentored pre-doctoral minority students. Two completing advanced degrees.
 %    %\end{itemize}
-\end{itemize}
 
 % Technical Resume
 %\item Molecular simulation of DNA
@@ -144,32 +79,61 @@ DPhil in Biological Physics. Wolfson College.
 %\end{description}
 
 
-\locdatesubsection{Johns Hopkins University}{Baltimore, MD}{December 2009}\\
+\nblocdatesubsection{Johns Hopkins University}{Baltimore, MD}{December 2009}\\
 BS in Biomedical Engineering. Minor in Economics. GPA: 3.26/4.00
 \begin{itemize}
+    \item International summer research experience in Japan. 2 patent applications.
     %\item  Voluntary capstone project on alternate GDP measures. Econometrics coursework.
-    \item Initiated and conducted voluntary capstone project on alternate GDP measures. 
-    \item Econometrics coursework.
+    %\item Econometrics coursework.
 \end{itemize}
 
-\locdatesubsection{Danish Institute for Study Abroad}{Copenhagen, Denmark}{Fall 2009}\\
-International Business \& Economics Program.
+\nblocdatesubsection{Danish Institute for Study Abroad}{Copenhagen, Denmark}{Fall 2009}\\
+\href{http://www.disabroad.org/study-abroad/programs/business/}{International Business Program}.
 \begin{itemize}
-    \item Cultural immersion through homestay and language training (15--20 hrs/wk). 
-    \item Corporate finance and business strategy coursework.
+    \item Cultural immersion through homestay and language training (15 hrs/wk). 
+    %\item Corporate finance and business strategy coursework.
 \end{itemize}
 
-\section{Honors}
-\nblocdatesubsection{NIH Graduate Student Research Award}{\$1k, <10\%}{2011} \\
-\nblocdatesubsection{National Science Foundation Graduate Research Program}{\$120k, <10\%}{2010} \\
-\nblocdatesubsection{Inductee, National Gallery for America's Young Inventors}{\$5k, <1\%}{2006} \\
-\nblocdatesubsection{5th Place, Intel Science Talent Search}{\$25k, <1\%}{2005}
+\section{Extracurricular}
+%\textbf{Extensive business \& economics exposure}
+\textbf{Demonstrated business interest}
+\begin{itemize}
+    \item \nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012/2013}
+        \begin{itemize}
+                \item Start-up finance, valuation, legal and IP coursework.
+        \end{itemize}
+    \item \nbdatesubsection{Mid-Atlantic Venture Capital and Biotech Conferences}{May/Sept 2012}
+        \begin{itemize}
+                \item Volunteer. Observed interplay between VC/PE and biotech ecosystems.
+        \end{itemize}
+    \item \nbdatesubsection{Conducted voluntary capstone project on alternate GDP measures.}{2009}
+    \item Econometrics, corporate finance and business strategy coursework.
+    \item Familiarity with corporate financial reporting, \textit{e.g.} can read a 10-Q/K.
+\end{itemize}
+
+\nbdatesubsection{Facebook London Hackathon}{Apr 2013}
+    \begin{itemize}
+        \item Team of 3 developed distributed computing app in 24 hours. Honorable mention.
+    \end{itemize}
+
+\nbdatesubsection{University of Oxford Student Consultancy}{Winter 2013}
+    \begin{itemize}
+            \item Team of 4. Learned importance of clarifying client expectations and needs.
+            %\item Team of 4 tasked with aiding a local green non-profit.
+    \end{itemize}
+
+\nbdatesubsection{Executive Treasurer, JHU Engineers without Borders}{2006-2009}
+    \begin{itemize}
+        \item \textbf{Setup financial reporting structure} for engineering development organization with \$100k/yr turnover. Financial oversight for teams operating in 3 countries.
+        \item Prepared and presented annual report to Dean of Engineering to secure continued support. Quarterly reports, accounts and budget guidance to team leaders.
+        %\item Prepared accounts, budget, internal quarterly and external annual reports.
+    \end{itemize}
 
 \section{Experience}
-\locdatesubsection{Game Programmer}{Oxford, UK}{Summer 2013}
+\nblocdatesubsection{NaturalMotion}{Oxford, UK}{Summer 2013}
 \begin{itemize}
-    \item Developed and implemented R\&D project plan for procedural animation engine.
-    \item Non-technical live-demo to key NaturalMotion stakeholders.
+    %\item Developed and implemented R\&D project plan for procedural animation engine.
+    \item Led R\&D project for animation engine. Non-technical demo to key stakeholders.
 \end{itemize}
 %Technical
 %\begin{itemize}
@@ -177,19 +141,19 @@ International Business \& Economics Program.
 %\item Agile development in \texttt{C++} with Microsoft toolchain.
 %\end{itemize}
 
-\locdatesubsection{Bioinformatics Programmer}{Boston, MA}{Jan -- May 2010}
-\begin{itemize}
-    \item Responsible for grant-based software deliverables at Ginkgo Bioworks, a bootstrapped synthetic biology start-up.
-    \item Exceeded milestone payment requirements worth $\sim$6 months of burn time.
-    %\item Collaborated with lab for further pipeline speedups from hardware integration.
-
-    %\item Employee \#4 at Ginkgo BioWorks, a bootstrapped synthetic biology start-up building a rapid prototyping pipeline for engineered biological systems. 
-    %\item Responsible for software deliverables on grant from industrial partner; exceeded milestone payment requirements worth $\sim$6 months of burn time.
-    %\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
-    %\item Collaborated with lab to quickly iterate builds and do hardware integration.
-    %\item Developed \texttt{Django} and \texttt{Ruby on Rails} apps for rapidly prototyping engineered biological systems. Exceeded milestone payment requirements.
-    %\item Collaborated directly with lab scientist to develop software specifications, quickly iterate builds and assist with hardware integration.
-\end{itemize}
+%\locdatesubsection{Bioinformatics Programmer}{Boston, MA}{Jan -- May 2010}
+%\begin{itemize}
+%    \item Responsible for grant-based software deliverables at Ginkgo Bioworks, a bootstrapped synthetic biology start-up.
+%    \item Exceeded milestone payment requirements worth $\sim$6 months of burn time.
+%    %\item Collaborated with lab for further pipeline speedups from hardware integration.
+%
+%    %\item Employee \#4 at Ginkgo BioWorks, a bootstrapped synthetic biology start-up building a rapid prototyping pipeline for engineered biological systems. 
+%    %\item Responsible for software deliverables on grant from industrial partner; exceeded milestone payment requirements worth $\sim$6 months of burn time.
+%    %\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
+%    %\item Collaborated with lab to quickly iterate builds and do hardware integration.
+%    %\item Developed \texttt{Django} and \texttt{Ruby on Rails} apps for rapidly prototyping engineered biological systems. Exceeded milestone payment requirements.
+%    %\item Collaborated directly with lab scientist to develop software specifications, quickly iterate builds and assist with hardware integration.
+%\end{itemize}
 
 %\locdatesubsection{Ion Torrent Systems}{Guilford, CT}{Summer 2009}
 %\begin{itemize}
@@ -208,27 +172,22 @@ International Business \& Economics Program.
 
 
 %\section{Policy}
-\locdatesubsection{Legislative Aide}{Annapolis, MD}{Spring 2009}
+\nblocdatesubsection{Maryland State Legislature}{Annapolis, MD}{Spring 2009}
 \begin{itemize}
-    \item Prepared testimony, policy memos, and statements for a Baltimore City Delegate to the Maryland General Assembly, representing $\sim$100k constituents.
+    \item Prepared testimony and policy memos for state delegate with $\sim$100k constituents. 
     %\item Coordinated with stakeholders to amend legislation. Succinctly communicated actionable concerns to delegate.
-    \item Succinctly communicated actionable stakeholder concerns to delegate.
+    %\item Communicated stakeholder concerns. Coordinated to amend legislation.
+    \item Coordinated to amend legislation for Health committee, Insurance subcommittee.
 \end{itemize}
 
-\locdatesubsection{Executive Treasurer}{Baltimore, MD}{2006-2009}
-    \begin{itemize}
-        \item Setup financial reporting structure for JHU Engineers without Borders, a development organization with \$100k/yr turnover. Teams operating in 3 countries.
-        \item Prepared and presented annual report to Dean of Engineering to secure continued support. Quarterly reports, accounts and budget guidance to team leaders.
-        %\item Prepared accounts, budget, internal quarterly and external annual reports.
-    \end{itemize}
-
-%\locdatesubsection{Baltimore City Health Department}{Baltimore, MD}{Fall 2007}
-%\begin{itemize}
-%\item Analyst for the 2008 Baltimore City Health Status Report. 
-%%\item Prepared policy memoranda on drug decriminalization and teen-smoking abatement.
-%%\item Aided in the execution of an Influenza monitoring initiative (establishing a quantitative baseline-metric) and a youth anti-smoking campaign (public relations).
-%\item Aided flu monitoring (quantitative) and anti-smoking campaign (public relations).
-%\end{itemize}
+\nblocdatesubsection{Baltimore City Health Department}{Baltimore, MD}{Fall 2007}
+\begin{itemize}
+    \item \textbf{Data gathering and presentation} in team of analyst for \href{http://www.baltimorehealth.org/hsr2008.html}{Annual Health Report}. 
+    %\item Coordinated across the department as an analyst for \href{http://www.baltimorehealth.org/hsr2008.html}{2008 Health Status Report}. 
+%\item Prepared policy memoranda on drug decriminalization and teen-smoking abatement.
+%\item Aided in the execution of an Influenza monitoring initiative (establishing a quantitative baseline-metric) and a youth anti-smoking campaign (public relations).
+\item Aided quantitative flu monitoring and anti-smoking public health campaigns.
+\end{itemize}
 
 %\section{Activities}
 %\datesubsection{Facebook London Hackathon}{Apr 2013}
@@ -248,30 +207,9 @@ International Business \& Economics Program.
 
 
 
-\section{Training}
-%\nbdatesubsection{Facebook London Hackathon}{Apr 2013} \\
 
-
-\nbdatesubsection{Facebook London Hackathon}{Apr 2013}
-    \begin{itemize}
-        \item Team of 3 developed distributed computing app in 24 hours. Honorable mention.
-    \end{itemize}
-
-\nbdatesubsection{University of Oxford Student Consultancy}{Winter 2013}
-    \begin{itemize}
-            \item Team of 4 tasked with aiding a local green non-profit.
-    \end{itemize}
-
-\nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012/2013}
-    \begin{itemize}
-            \item Coursework on start-up finance, legal and IP.
-    \end{itemize}
 
 %\nbdatesubsection{CECAM Molecular Simulation Course}{Jan 2013} \\
-\nbdatesubsection{Volunteer, Mid-Atlantic Venture Capital and Biotech Conferences}{May/Sept 2012}
-    \begin{itemize}
-            \item Exposure to VC/PE and biotech ecosystems.
-    \end{itemize}
 %\nbdatesubsection{Mid-Atlantic Biotech Conference (Volunteer)}{Sept 2012} \\
 %\nbdatesubsection{Mid-Atlantic Venture Capital Association Conference (Volunteer)}{May 2012}
 
@@ -287,8 +225,15 @@ International Business \& Economics Program.
 %\nbdatesubsection{Mid-Atlantic Venture Association Capital Connection (Volunteer)}{23--24 May 2012} \\
 %\nbdatesubsection{Marine Biological Lab Optical Microscopy Course}{11--21 Oct 2011} \\
 
+\section{Honors}
+\nblocdatesubsection{NIH Graduate Student Research Award}{\$1k, <10\%}{2011} \\
+\nblocdatesubsection{National Science Foundation Graduate Research Program}{\$120k, <10\%}{2010} \\
+\nblocdatesubsection{\href{http://www.nmoe.org/gallery/2006/harrison.htm}{Inductee, National Gallery for America's Young Inventors}}{\$5k, <1\%}{2006} \\
+\nblocdatesubsection{\href{http://www.jhu.edu/jhumag/0605web/scholar.html}{5th Place, Intel Science Talent Search}}{\$25k, <1\%}{2005}
+
 
 \section{Hobby}
+%bow tie maker / allotment gardener \& cook / theater light tech
 bow tie maker / allotment gardener / theater light tech
 %bow ties / allotment gardening / technical theater (lighting)
 %bow ties $\bullet$ allotment gardening $\bullet$ light design $\bullet$ technical theater

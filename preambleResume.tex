@@ -1,0 +1,77 @@
+% Geometry package doesn't work with res margin option
+%\usepackage[margin=1.0in]{geometry} 
+%\topmargin=-0.5in
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+%\itemsep=0in
+%\parsep=0in
+
+\addtolength{\textheight}{3cm}
+%\addtolength{\voffset}{-1cm}
+
+%\oddsidemargin=-1in
+%\headsep=0pt
+%\headheight=0pt
+%\topmargin=-1in
+
+%\usepackage[cm]{fullpage}
+%\pagestyle{empty}
+
+% the margin option causes section titles to appear to the left of body text 
+\textwidth=5.2in % increase textwidth to get smaller right margin
+% Font details here: http://www.tug.dk/FontCatalogue/lmodern/
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage[osf]{mathpazo}
+%\renewcommand*\familydefault{\ttdefault}
+%\renewcommand*\familydefault{\sfdefault} 
+
+\usepackage{hyperref}
+% No ugly borders
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+}
+
+\usepackage{microtype}
+\usepackage[english]{babel}
+
+
+\usepackage{enumitem}
+%\usepackage{layout}
+
+% List and enumeration
+\usepackage{enumitem}
+\setitemize{itemsep=1pt,topsep=1pt,parsep=1pt,partopsep=1pt}
+
+
+% Customizations
+% From: https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html
+\newcommand{\locdatesubsection}[3]{\textbf{#1} (#2) \hfill #3}
+\newcommand{\nblocdatesubsection}[3]{#1 (#2) \hfill #3 }
+\newcommand{\nbdatesubsection}[2]{#1 \hfill #2 }
+\newcommand{\datesubsection}[2]{\textbf{#1} \hfill #2 }
+
+
+% Multiline comments: http://tex.stackexchange.com/questions/87303/multi-line-block-comments-in-latex
+%\long\def\/*#1*/{}
+
+%\newcommand{\datedsubsection}[2]{%
+%\subsection[#1]{#1 \hfill #2}%
+%}
+
+% Unbold description label: http://www.latex-community.org/forum/viewtopic.php?f=44&t=4204
+%\renewcommand*\descriptionlabel[1]{\hspace\labelsep\itshape #1}
+
+
+%\renewcommand\floatpagefraction{.9}
+%\renewcommand\topfraction{.9}
+%\renewcommand\bottomfraction{.9}
+%\renewcommand\textfraction{.1}   
+%\setcounter{totalnumber}{50}
+%\setcounter{topnumber}{50}
+%\setcounter{bottomnumber}{50}
