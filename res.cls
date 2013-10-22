@@ -277,7 +277,7 @@
 % unless you really understand all of this but it is not
 % hard.  Either way, it can only be executed once
 %
-\def\sectionfont{\sf\Large}
+\def\sectionfont{\sf\large}
 \newdimen\sectionwidth
 \newskip\sectionskip
 \newdimen\resumewidth
@@ -441,8 +441,9 @@
 %    (possibly taking multiple lines) with the body of
 %    the text next to it
 %
+% RMH - Section width
 \let\@@section\relax
-\def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0.5in}\let
+\def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0.0in}\let
   \@@section\unboxed@sectiontitle\fi}
 \def\ds@margin{\ifx\@@section\relax\newsectionwidth{1.3in}\let
   \@@section\boxed@sectiontitle\fi}
