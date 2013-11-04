@@ -2,7 +2,7 @@
 % This file uses the resume document class (res.cls)
 % From http://www.rpi.edu/dept/arc/training/latex/resumes/
 
-\documentclass[margin]{res} 
+\documentclass[margin, a4paper]{res} 
 
 \include{preambleResume}
 
@@ -10,10 +10,6 @@
 \begin{sloppypar}
 %\layout{}
  
-\name{\textbf{\textsf{Ryan M Harrison}}\\ \\} % the \\[12pt] adds a blank line after name
- 
-% res package only supports two resumes -- Updated it to support three.
-
 \include{headerResume}
 
 \begin{resume} 
@@ -23,8 +19,8 @@
  
 \section{Education} 
 \nblocdatesubsection{University of Oxford}{Oxford, UK}{Expected 2014}\\
-\textbf{DPhil in Computational Biophysics}. Wolfson College.
-%(NSF Graduate Research Fellow)
+\textbf{DPhil in Computational Biophysics}. Wolfson College. \\
+\href{http://oxcam.gpp.nih.gov/}{NIH-Oxford Scholar}. Collaboration with US National Institutes of Health.
 
 %\begin{itemize}[leftmargin=*] % No indent on bullets
 \begin{itemize}
@@ -32,7 +28,7 @@
     \begin{itemize}
         \item Spearhead \textbf{integration testing} to reduce scientific and build errors.
         \item Simulation \textbf{software maintenance} in \texttt{C++}; analysis suite in \texttt{Python}.
-        \item Familiar with molecular dynamics, monte carlo and rare event methods.
+        \item Familiar with molecular dynamics, Monte Carlo and rare event methods.
     \end{itemize}
 \item Single-molecule fluorescence: molecular biology, optics and data processing
     \begin{itemize}
@@ -68,7 +64,23 @@
 \nblocdatesubsection{Johns Hopkins University}{Baltimore, MD}{December 2009}\\
 Bachelor of Science in Biomedical Engineering; Minor in Economics. GPA: 3.26/4.00
     \begin{itemize}
-        \item International summer research experience in Japan. 2 patent applications.
+    % International focus
+    \item International summer research experience in Japan. 1 patent application.
+
+    % Neck brace
+    \item Analyzed patient needs to build neck brace for long-term use. 1 patent application.
+    %\item Worked with team to build cervical collar for long-term use. 1 patent application.
+    %\item Conducted needs analysis in team of 10 to build neck brace. 1 patent application.
+    %\item Patient needs analysis to build neck brace for long-term use. 1 patent application.
+
+    % Health Focus:
+    %\item Infectious diseases research experience at \textbf{New York Presbyterian hospital}, including surgery observation, ambulance ride-along and ER volunteering.
+    %\item Built a cervical collar for long-term use and cervical decompression. Includes needs analysis with patient and work on a project team. 1 patent application.
+
+
+    % Econ focus
+    %\item  Voluntary capstone project on alternate GDP measures. Econometrics coursework.
+    %\item Econometrics coursework.
     \end{itemize}
 
 \nblocdatesubsection{Danish Institute for Study Abroad}{Copenhagen, Denmark}{Fall 2009}\\
@@ -85,27 +97,25 @@ International Business Program.
     %\underline{Other:} & \textsc{\texttt{MATLAB}}, \texttt{Ruby}, \texttt{R} \\
     \underline{Toolchains:} & Linux (\texttt{vim} \textit{et al.}), Microsoft (\texttt{VisualStudio} \textit{et al.}) \\
     \underline{Versioning a must:} & \texttt{svn}, \texttt{git} \\
-    \underline{Ask about:} & Refactoring and testing scientific code. \\
-                           & Experience in corporate Agile environment.
+    \underline{Ask about:} & Refactoring and testing scientific code. %\\
+                           %& Experience in corporate Agile environment.
 \end{tabular}
 
 \section{Experience}
 \nblocdatesubsection{NaturalMotion}{Oxford, UK}{Summer 2013}
 \begin{itemize}
-\item Delivered specification and implementation of R\&D project for the Morpheme procedural animation engine. Non-technical live-demo to key stakeholders.
+\item Delivered specification and implementation of procedural animation R\&D project.
 \item \textbf{Agile development} in \texttt{C++} with Microsoft toolchain.
+\item Presented core findings via non-technical demos to key stakeholders.
+%\item Developed and implemented R\&D project in corporate Agile environment.
+
 \end{itemize}
-%Technical
-%\begin{itemize}
-%\item R\&D for the Morpheme procedural animation engine. 
-%\item Agile development in \texttt{C++} with Microsoft toolchain.
-%\end{itemize}
 
 \nblocdatesubsection{Ginkgo BioWorks}{Boston, MA}{Jan -- May 2010}
 \begin{itemize}
-\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
+\item Developed \texttt{Django} and \texttt{Rails} apps for a DNA assembly pipeline.
 %\item Developed web apps to speed up prototyping of engineered biological systems. 
-\item \textbf{Exceeded software milestones} for payments from industrial partner.
+\item Exceeded software milestone payment requirements worth $\sim$6 months burn.
 %\item Collaborated with lab for further pipeline speedups from hardware integration.
 %\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
 %\item Collaborated with lab to quickly iterate builds and do hardware integration.
@@ -122,28 +132,34 @@ International Business Program.
 %%\item Wrote desktop \texttt{Pyjamas}/\texttt{PyQT} app to analyse quality and track improvement.
 %\end{itemize}
 
-\nblocdatesubsection{Proteomics Research Developer}{Baltimore, MD}{2003 -- 2007}
-\begin{itemize}
-%\item Developed a model for pH-sensitive regions within proteins; \texttt{C++} implementation in Rosetta protein structure suite, with analysis in \texttt{Perl} and \texttt{R}.
-\item \texttt{C++} developer for Rosetta protein structure suite. Analysis tools with \texttt{Perl} and \texttt{R}.
-\item \textbf{Mentored} high school student with interest in protein structure prediction.
-\end{itemize}
+%\nblocdatesubsection{Proteomics Research Developer}{Baltimore, MD}{2003 -- 2007}
+%\begin{itemize}
+%%\item Developed a model for pH-sensitive regions within proteins; \texttt{C++} implementation in Rosetta protein structure suite, with analysis in \texttt{Perl} and \texttt{R}.
+%\item \texttt{C++} developer for Rosetta protein structure suite. Analysis tools with \texttt{Perl} and \texttt{R}.
+%\item Mentored high school student with interest in protein structure prediction.
+%\end{itemize}
+
 
 %\section{Policy}
-%\nblocdatesubsection{Maryland General Assembly}{Annapolis, MD}{Spring 2009}
+%\textbf{Communication \& Collaboration} \\
+\nblocdatesubsection{Maryland State Legislature}{Annapolis, MD}{Jan--May 2009}
+\begin{itemize}
+    \item Prepared testimony and policy memos for state delegate with $\sim$100k constituents. 
+    %\item Coordinated with stakeholders to amend legislation. Succinctly communicated actionable concerns to delegate.
+    %\item Communicated stakeholder concerns. Coordinated to amend legislation.
+    \item Coordinated to amend legislation for Health Committee, Insurance Subcommittee.
+\end{itemize}
+
+%\nblocdatesubsection{Baltimore City Health Department}{Baltimore, MD}{Sept--Dec 2007}
 %\begin{itemize}
-%\item Prepared testimony, policy memos, and statements for a Baltimore City Delegate.
-%\item Coordinated with stakeholders to amend legislation, including meeting with constituents and succinctly communicating actionable concerns to delegate.
-%\end{itemize}
-%
-%\nblocdatesubsection{Baltimore City Health Department}{Baltimore, MD}{Fall 2007}
-%\begin{itemize}
-%\item Analyst for the 2008 Baltimore City Health Status Report. 
+%    \item Data gathering and writing in team of analysts for \href{http://www.baltimorehealth.org/hsr2008.html}{Annual Health Report}.
+%    %\item \textbf{Data gathering and presentation} for \href{http://www.baltimorehealth.org/hsr2008.html}{Annual Health Report}. Team of analysts.
+%    \item Liaised with epidemiologists for quantitative flu monitoring initiative.
+%    %\item Aided quantitative flu monitoring and anti-smoking public health campaigns.
+%    %\item Coordinated across the department as an analyst for \href{http://www.baltimorehealth.org/hsr2008.html}{2008 Health Status Report}. 
 %%\item Prepared policy memoranda on drug decriminalization and teen-smoking abatement.
 %%\item Aided in the execution of an Influenza monitoring initiative (establishing a quantitative baseline-metric) and a youth anti-smoking campaign (public relations).
-%\item Aided flu monitoring (quantitative) and anti-smoking campaign (public relations).
 %\end{itemize}
-
 
 \section{Extracurricular}
 
@@ -157,10 +173,24 @@ International Business Program.
 %            \item Team of 4 tasked with aiding a local green non-profit.
 %    \end{itemize}
 
-\nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012/2013}
-    \begin{itemize}
-            \item Start-up finance, valuation, legal and IP coursework.
-    \end{itemize}
+
+\textbf{Demonstrated business interest}
+\begin{itemize}
+    \item Can read a 10-Q/K. Econometrics, corporate finance and strategy coursework. 
+    %\item \nbdatesubsection{Oxford Student Consultancy Project}{Jan--Mar 2013}
+    \item \nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012--2013}
+        \begin{itemize}
+                \item Start-up finance, valuation, legal and IP coursework.
+        \end{itemize}
+    \item \nbdatesubsection{Venture Capital and Biotech Conference Volunteer}{May/Sept 2012}
+    %\item \nbdatesubsection{Conducted optional capstone project on alternate GDP measures.}{2009}
+\end{itemize}
+
+
+%\nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012/2013}
+%    \begin{itemize}
+%            \item Start-up finance, valuation, legal and IP coursework.
+%    \end{itemize}
 
 %\nbdatesubsection{Executive Treasurer, JHU Engineers without Borders}{2006-2009}
 %    \begin{itemize}
@@ -204,14 +234,11 @@ International Business Program.
 \nblocdatesubsection{5th Place, Intel Science Talent Search}{\$25k}{2005}
 
 \section{Hobby}
-bow tie maker / allotment gardener / theater light tech
-%bow ties / allotment gardening / technical theater (lighting)
-%bow ties $\bullet$ allotment gardening $\bullet$ light design $\bullet$ technical theater
-
-
+Bow tie maker \quad\textbullet\quad Allotment gardener \quad\textbullet\quad Theater light tech
 
 \end{resume} 
 \end{sloppypar}
+
 \end{document} 
 
 
