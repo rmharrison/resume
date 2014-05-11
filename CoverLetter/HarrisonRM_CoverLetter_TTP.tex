@@ -1,0 +1,88 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+% From http://www.rpi.edu/dept/arc/training/latex/resumes/
+
+\documentclass{../res} 
+
+\include{../preambleResume}
+\textwidth=6.5in
+\addtolength{\textheight}{-3cm}
+
+\begin{document} 
+\begin{sloppypar}
+ 
+%\include{includeHeader}
+\include{../headerResume}
+
+\begin{resume} 
+%\noindent\rule{5.2in}{0.75pt}
+%\setlength{\parskip}{1.00ex}
+%\setlength{\parindent}{0pt}
+ 
+\vspace{1\baselineskip}
+
+% Date
+27 October 2013
+\vspace{1\baselineskip}
+
+% Inside address
+Ms. Fran Maguire \\
+TTP Group plc  \\
+Melbourn Science Park \\
+Melbourn Hertfordshire \\
+SG8 6EE
+\vspace{1\baselineskip}
+
+% Opening
+Dear Ms. Maguire: % From Oxford General Fair handbook 2013. See google calender for the doc, pg 53.
+
+\textbf{Re: S\&T Speculative Application via Oxford recruiting (similar to ref:st271112, peeas)}
+
+% Write the body of the letter
+As a final year DPhil in Computational Biophysics at the University of Oxford, I've honed my analytical and quantitative skills through years of training. I'd like to continue using my technical training to reduce ideas to practice; TTP seems like it could be a fit.
+
+I spoke with TTP at the Oxford Career Fair on 22 October, and was impressed by the firm. As an American, I was familiar with your friendly Boston competitor, Cambridge Consultants, but hadn't heard of TTP before looking up the basics before the fair. This lack of awareness was quickly dispatched by Google. 
+
+My thesis has two parts, molecular modelling of DNA and single-molecule fluorescence studies of a DNA helicase, a class of protein that unwinds the DNA double helix. That means extensive experience with both simulation methods and working with real noisy data (read: It's a deep insight that can only be captured with single-molecule detection \ldots or an op-amp gone horribly wrong \ldots oh, wait):
+\begin{itemize}[itemindent=1cm]
+    \item Simulation methods
+        \begin{itemize}[itemindent=1cm]
+            \item Molecular dynamics
+            \item Monte Carlo (Advanced methods item virtual move, cluster move steps)
+            \item Rare event methods (Umbrella sampling, Forward Flux Sampling)
+        \end{itemize}
+    \item Real noisy data
+        \begin{itemize}[itemindent=1cm]
+            \item Taking data on custom optics setups
+            \item Image processing for single-molecule fluorescence data (non-linear alignment, PSF fitting)
+            \item Time-series analysis to identify states in noisy data
+        \end{itemize}
+\end{itemize}
+
+As such, I have programming experience in a variety of languages. Realizing that scientific code is very different than commercial code, I took the opportunity to intern with NaturalMotion this summer, a game animation middleware and mobile games company based in Oxford. R\&D wanted someone with simulation experience to work with a newly developed numerical solver for the procedural animation of complex game characters; I wanted to learn about industry standard tools and development in an Agile environment. I'm a Linux-based \texttt{vim} (with souped-up .vimrc) and terminal (\texttt{grep, sed, awk}) kind of guy; but as I suspected, folks in industry use a Microsoft toolchain with VisualStudio IDE, to which I become accustomed.
+
+The Head of R\&D -- who I imagine had some difficulty in convincing the higher-ups (read: Human Resources) to hire a molecular biophysicist into a game company -- had further trouble convincing another set of higher-ups (read: Business People) of the utility of the new method. He was kind enough to settle-up the first set, so I figured I ought to see about the second. I took it upon myself to build non-technical demos to illustrate my work; this culminated in an end-of-summer presentation to the entire middleware division of the company. Hopefully this makes things simpler for the next man with non-obviously applicable skills. Anyways, I digress.
+
+My modelling experience is complemented by an undergraduate degree in biomedical engineering. Naturally, as a biomedical engineering student, I've worked with patients and spent some time in hospital on observations. Naturally, I've also worked on a number of projects in the life sciences ecosystem. These are detailed on my CV, but briefly, included building a neck brace and building the software-side of an integrated plasmid assembly pipeline.
+
+Although there are no exact fits in vacancies (see PPS), you suggested things were close enough to justify submitting an application. I could fit in a variety of areas; for example, non-embedded software systems -- the intersection between devices and modelling. Pure-play modelling is also an option, but I do appreciate the opportunity to get my hands dirty once in a while. Blame the engineering degree.
+
+Anyways, thank you for your time and attention. I look forward to hearing from you.
+
+\vspace{1\baselineskip}
+% Closing
+Sincerely,
+\\ \\ \\ \\
+Ryan M Harrison \\ 
+DPhil Student \\
+Computational Biophysics \\
+University of Oxford  \\ \\ \\
+PS. Work authorization: US (indefinite), UK (Aug 2015, Tier 4 Doctorate Extension Scheme). \\ \\
+PPS. An exact fit would read: Computational Biophysicist with background in Biomedical Engineer for modelling and software integration. Besties with consumer facing Medical Devices; moonlight for others as required. Hearts bow ties and working with clever engineers who are better at building hardware than I; but, will amuse to simmer-down the giddiness that naturally results from being around, and inevitably wanting to play with, prototypes.
+
+\end{resume} 
+\end{sloppypar}
+\end{document} 
+
+
+

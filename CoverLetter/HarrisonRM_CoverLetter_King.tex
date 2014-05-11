@@ -1,0 +1,73 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+% From http://www.rpi.edu/dept/arc/training/latex/resumes/
+
+\documentclass{../res} 
+
+\include{../preambleResume}
+\textwidth=6.5in
+\addtolength{\textheight}{-3cm}
+\textheight 10.00in %RMH
+
+\begin{document} 
+\begin{sloppypar}
+ 
+%\include{includeHeader}
+\include{../headerResume}
+
+\begin{resume} 
+%\noindent\rule{5.2in}{0.75pt}
+%\setlength{\parskip}{1.00ex}
+%\setlength{\parindent}{0pt}
+ 
+% Date
+%\vspace{1\baselineskip}
+11 May 2014
+
+% Inside address
+
+%\vspace{1\baselineskip}
+
+% Opening
+
+\textbf{Re: Data Scientist, London via Silicon Milkroundabout}
+
+% Write the body of the letter
+I play with data for fun -- it's the most important thing you should know about me. That said, I'm an ideal fit for junior data scientist post and I'm excited about working with you at King. Please take a moment to let me explain\ldots
+
+Digging into available (or not so available) datasets, it's what I do. Usually prompted by a discussion or burning curiosity, and occasionally written up and published on the ol' blog.
+
+Available (i.e. \textbf{Integrating} multiple sources): \\
+For example, after reading about the disastrous prospects for life sciences PhDs staying on in academia, I was curious about what a `typical' life scientist actually looks like. So, to the data archives. Pulled the demographic data by level, which believe it or not isn't standardized and is siloed by level, from a variety of sources. Curated it, and used some nifty facial averaging software to pull together the composite `Face of Life Sciences.' I'm no graphic designer, not by a long shot, but the infographic did go on to claim an Oxford Infographics prize. Did a companion piece on the `leaky pipeline', the dearth of minority life scientist at higher levels. Also known as the stats behind why some people are surprised when they meet me in person.
+
+Not so available (i.e. \textbf{Vanquishing} a silo):\\
+In another more recent example, a friend forwarded me a `scientific' personality test from the Via Institute on Character. I enjoyed the test, and was curious about how my results compared with that of others. Unfortunately, they have sinned -- non-public, siloed data. The humanity! I discovered a security flaw on their website, wrote a quick script to distributively (dozen boxes to speed things up) scape about 5\% of their database. After redacting personal info, such as names, I went for a little pythonic data dive and published some humorous findings. Naturally, I didn't publish the security flaw and informed the institute, which to their credit, they did fix. My thanks was several request to take down the data. \textit{Le sigh}.
+
+In conclusion, my value to you and the data science team stems from two core competencies: 
+\begin{itemize}[itemindent=1cm]
+    \item Collaborative software development chops for prototyping (\texttt{Python}) and production (\texttt{C++})
+    \item Extensive simulation method and data processing experience
+\end{itemize}
+These core competencies are backed by practical industry experience, including a stint at NaturalMotion, a free-to-play game company tackling many analytics challenges similar to your own, solid academics, and some good ol' fashioned data fun.
+
+If you're curious, the examples I've mentioned are available online, \href{http://www.verdantforce.com}{\nolinkurl{verdantforce.com}}:
+\begin{itemize}[itemindent=1cm]
+    \item \href{http://www.verdantforce.com/2012/05/infographic-face-of-life-science}{\nolinkurl{Face of Life Sciences}}
+    \item \href{http://www.verdantforce.com/2014/04/data-science-personality-testing}{\nolinkurl{Personality Testing}}
+\end{itemize}
+
+I am genuinely excited about working with you. Even if you aren't interested, I would greatly appreciate a response, even a simple `No' would suffice. Thank you for your time and attention. I look forward to hearing from you.
+
+% Closing
+Sincerely, \\
+Ryan M Harrison \\ 
+DPhil Candidate \\
+Computational Biophysics \\
+University of Oxford  \\
+Work authorization: US Citizen, Tier 4 Doctorate extension visa (to Aug 2015)
+\end{resume} 
+\end{sloppypar}
+\end{document} 
+
+
+

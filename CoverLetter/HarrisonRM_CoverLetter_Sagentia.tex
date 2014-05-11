@@ -1,0 +1,87 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+% From http://www.rpi.edu/dept/arc/training/latex/resumes/
+
+\documentclass{../res} 
+
+\include{../preambleResume}
+\textwidth=6.5in
+\addtolength{\textheight}{-3cm}
+
+\begin{document} 
+\begin{sloppypar}
+ 
+%\include{includeHeader}
+\include{../headerResume}
+
+\begin{resume} 
+%\noindent\rule{5.2in}{0.75pt}
+%\setlength{\parskip}{1.00ex}
+%\setlength{\parindent}{0pt}
+ 
+\vspace{1\baselineskip}
+
+% Date
+27 October 2013
+\vspace{1\baselineskip}
+
+% Inside address
+Sagentia Ltd \\
+c/o Dr. Tim Schuller \\
+Harston Mill \\
+Harston \\
+Cambridge CB22 7GG
+\vspace{1\baselineskip}
+
+% Opening
+Dear Sagentia S\&T Group Leader:
+
+\textbf{Re: S\&T Consultant (via Oxford recruiting)}
+
+% Write the body of the letter
+As a final year DPhil in Computational Biophysics at the University of Oxford, I've honed my analytical and quantitative skills through years of training. I'd like to continue using my technical training to reduce ideas to practice; Sagentia seems like it could be a fit.
+
+I spoke with Dr. Tim Schuller at the Oxford Career Fair on 22 October, and was impressed by him and his presentation of the firm. As an American, I was familiar with your friendly Boston competitor, Cambridge Consultants, but hadn't heard of Sagentia before the fair. This lack of awareness was quickly dispatched by Google. The SEC 10-K reading ability also came in handy (the firm reports in a slightly different format, but it's close enough).
+
+My thesis has two parts, molecular modelling of DNA and single-molecule fluorescence studies of a DNA helicase, a class of protein that unwinds the DNA double helix. That means extensive experience with both simulation methods and working with real noisy data:
+\begin{itemize}[itemindent=1cm]
+    \item Simulation methods
+        \begin{itemize}[itemindent=1cm]
+            \item Molecular dynamics
+            \item Monte Carlo (Advanced methods item virtual move, cluster move steps)
+            \item Rare event methods (Umbrella sampling, Forward Flux Sampling)
+        \end{itemize}
+    \item Real noisy data
+        \begin{itemize}[itemindent=1cm]
+            \item Taking data on custom optics setups
+            \item Image processing for single-molecule fluorescence data (non-linear alignment, PSF fitting)
+            \item Time-series analysis to identify states in noisy data
+        \end{itemize}
+\end{itemize}
+
+As such, I have programming experience in a variety of languages. Realizing that scientific code is very different than commercial code, I took the opportunity to intern with NaturalMotion this summer, a game animation middleware and mobile games company based in Oxford. R\&D wanted someone with simulation experience to work with a newly developed numerical solver for the procedural animation of complex game characters; I wanted to learn about industry standard tools and development in an Agile environment. 
+
+The Head of R\&D -- who I imagine had some difficulty in convincing the higher-ups (read: Human Resources) to hire a molecular biophysicist into a game company -- had further trouble convincing another set of higher-ups (read: Business People) of the utility of the new method. He was kind enough to settle-up the first set, so I figured I ought to see about the second. I took it upon myself to build non-technical demos to illustrate my work; this culminated in an end-of-summer presentation to the entire middleware division of the company. Hopefully this makes things simpler for the next man with non-obviously applicable skills. Anyways, I digress.
+
+My modelling experience is complemented by an undergraduate degree in biomedical engineering. Naturally, as a biomedical engineering student, I've worked with patients and spent some time in hospital on observations. Naturally, I've also worked on a number of projects in the life sciences ecosystem. These are detailed on my CV, but briefly, included building a neck brace and building the software-side of an integrated plasmid assembly pipeline.
+
+Although there are no suitable vacancies on the website, Dr. Schuller mentioned that Sagentia was always on the lookout for clever folks. I could fit in a variety of areas; for example, non-embedded software systems -- the intersection between devices and modelling. Pure-play modelling is also an option, but I do appreciate the opportunity to get my hands dirty once in a while. Blame the engineering degree.
+
+Anyways, thank you for your time and attention. I look forward to hearing from you.
+
+\vspace{1\baselineskip}
+% Closing
+Sincerely,
+\\ \\ \\ \\
+Ryan M Harrison \\ 
+DPhil Student \\
+Computational Biophysics \\
+University of Oxford  \\ \\ \\
+PS. Work authorization: US (indefinite), UK (Aug 2015, Tier 4 Doctorate Extension Scheme). \\ \\
+
+\end{resume} 
+\end{sloppypar}
+\end{document} 
+
+
+
