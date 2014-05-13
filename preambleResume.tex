@@ -7,7 +7,8 @@
 %\itemsep=0in
 %\parsep=0in
 
-\addtolength{\textheight}{3cm}
+%\usepackage[a4paper]{geometry}
+\addtolength{\textheight}{3.5cm}
 %\addtolength{\voffset}{-1cm}
 
 %\oddsidemargin=-1in
@@ -48,13 +49,16 @@
 \usepackage{enumitem}
 \setitemize{itemsep=1pt,topsep=1pt,parsep=1pt,partopsep=1pt}
 
-
 % Customizations
 % From: https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html
 \newcommand{\locdatesubsection}[3]{\textbf{#1} (#2) \hfill #3}
-\newcommand{\nblocdatesubsection}[3]{#1 (#2) \hfill #3 }
-\newcommand{\nbdatesubsection}[2]{#1 \hfill #2 }
+%\newcommand{\nblocdatesubsection}[3]{#1 (#2) \hfill #3 }
+\newcommand{\nblocdatesubsection}[3]{\vspace{-10pt}\section{\normalsize{#3}} {\normalsize#1} {\normalsize(#2)}}
+\newcommand{\areasection}[1]{\section{\Large{#1}}\vspace{-6pt}\section{\noindent\rule{6.5in}{0.5pt}}\vspace{16pt}}
+\newcommand{\nbdatesubsection}[2]{\vspace{-14pt}\section{\normalsize{#2}} #1 }
+%\newcommand{\nbdatesubsection}[2]{#1 \hfill #1 }
 \newcommand{\datesubsection}[2]{\textbf{#1} \hfill #2 }
+
 
 
 % Multiline comments: http://tex.stackexchange.com/questions/87303/multi-line-block-comments-in-latex
