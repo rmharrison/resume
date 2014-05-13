@@ -3,6 +3,7 @@
 % From http://www.rpi.edu/dept/arc/training/latex/resumes/
 
 \documentclass[margin]{res} 
+%\documentclass{res} 
 
 \include{preambleResume}
 \textheight 9.50in %RMH
@@ -11,43 +12,38 @@
 \begin{sloppypar}
 %\layout{}
  
-\name{\textbf{\textsf{Ryan M Harrison}}\\ \\} % the \\[12pt] adds a blank line after name
+\include{headerResume}
  
 % res package only supports two resumes -- Updated it to support three.
 
-\name{\textbf{Ryan M Harrison}\\ \\} % the \\[12pt] adds a blank line after name
-
-\address{2115 Cloville Avenue\\
-         Baltimore, MD 21214\\
-         +1 443 257 5953
-         }
-\address{\href{mailto:ryan.harrison@physics.ox.ac.uk}{\nolinkurl{ryan.harrison@physics.ox.ac.uk} } \\
-         \href{http://linkedin.com/in/rmharri}{\nolinkurl{linkedin.com/in/rmharri}}\\
-         \href{http://verdantforce.com}{\nolinkurl{verdantforce.com}}\\
-         %\href{http://github.com/rmharrison}{\nolinkurl{github.com/rmharrison}}\\
-        }
-\address{Wolfson College\\ 
-         Oxford OX2 6UD\\
-         +44 (0) 7523 229446
-         }
 
 \begin{resume} 
+\textheight 9.5in %RMH
 %\noindent\rule{5.2in}{0.75pt}
 \setlength{\parskip}{1.00ex}
 \setlength{\parindent}{0pt}
  
-\section{Education} 
-\nblocdatesubsection{University of Oxford}{Oxford, UK}{Expected Sept 2014}\\
+\areasection{Education}
+\nblocdatesubsection{University of Oxford}{Oxford, UK}{Sept 2014\\(Expected)}\\
 \textbf{DPhil in Computational Biophysics} \\
-\textit{Thesis: Coarse-grained modelling of extreme DNA bending} 
-    \begin{itemize}
-        \item Managed trans-atlantic scientific collaboration between the US and UK. 
-        %\item Corporate finance and business strategy coursework.
-    \end{itemize}
+Thesis: Coarse-grained modelling of extreme DNA bending
+\begin{itemize}
+    \item \href{http://www.nsfgrfp.org}{National Science Foundation Graduate Research Fellow} <10\% (2010)
+    \item \href{http://oxcam.gpp.nih.gov}{NIH-Oxford Scholar} <10\% (2010)
+\end{itemize}
+
 
 \nblocdatesubsection{Johns Hopkins University}{Baltimore, MD}{Dec 2009}\\
 Bachelor of Science in Biomedical Engineering; \textbf{Minor in Economics}. GPA: 3.26/4.00 \\
-\textit{Capstone project: Econometrics on alternate GDP measures.}
+Capstone: Econometrics study on alternate GDP measures.
+\begin{itemize}
+    \item \href{http://www.nmoe.org/gallery/2006/harrison.htm}{Inductee}, \href{http://www.nmoe.org/gallery/}{National Gallery for America's Young Inventors} <1\% (2006)
+    \item \href{http://sciserv.org/sts/64sts/winners.asp}{5th Place}, \href{https://student.societyforscience.org/intel-sts}{Intel Science Talent Search} <1\% (2005)
+        %\begin{itemize}
+        %    \item Dubbed the `junior nobel prize.' First from Baltimore City in 50 years. [\href{http://pages.jh.edu/~jhumag/0605web/scholar.html}{Media}]
+        %\end{itemize}
+\end{itemize}
+
 %\begin{itemize}
     % International focus
     %\item International summer research experience in Japan. 1 patent application.
@@ -69,54 +65,20 @@ Bachelor of Science in Biomedical Engineering; \textbf{Minor in Economics}. GPA:
 
 \nblocdatesubsection{Danish Institute for Study Abroad}{Copenhagen, Denmark}{Aug -- Dec 2009}\\
 International Business Program.
-    \begin{itemize}
-        \item Cultural immersion through homestay and language training (15 hrs/wk). 
-        %\item Corporate finance and business strategy coursework.
-    \end{itemize}
+    %\begin{itemize}
+    %    \item Cultural immersion through homestay and language training (15 hrs/wk). 
+    %    %\item Corporate finance and business strategy coursework.
+    %\end{itemize}
 
-\section{Extracurricular}
-\textbf{Demonstrated interest in the Business} \\
-Familiarity with corporate financial reporting (e.g. can read an SEC 10-Q/K) \\
-Econometrics, corporate finance and strategy coursework.
+
+
+\areasection{\mbox{Technical Experience}}
+\nblocdatesubsection{Graduate Research Assistant at \href{https://dna.physics.ox.ac.uk/index.php/Main_Page}{University of Oxford}}{Oxford, UK}{2010 -- Present}
 \begin{itemize}
-    \item \nbdatesubsection{Oxford Student Consultancy Project}{Jan--Mar 2013}
-    \item \nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012--2013}
-        %\begin{itemize}
-        %        \item Start-up finance, valuation, legal and IP coursework.
-        %\end{itemize}
-    %\item \nbdatesubsection{Venture Capital and Biotech Conference Volunteer}{May/Sept 2012}
-    \item \nbdatesubsection{Mid-Atlantic Biotech Conference (Volunteer)}{Sept 2012}
-    \item \nbdatesubsection{Mid-Atlantic Venture Association Capital Connection (Volunteer)}{May 2012}
-    %\item \nbdatesubsection{NIH Science Policy Group}{2011/2012} 
-    %\item \nbdatesubsection{Macroeconomics capstone project on alternate GDP measures.}{2009}
+    \item Initiated and managed scientific \textbf{trans-atlantic collaboration}.
+    \item Spearheaded software integration testing and automated documentation efforts. 
+    \item Resulted in a dramatic reduction in both scientific and build errors.
 \end{itemize}
-\nbdatesubsection{Facebook London Hackathon}{Apr 2013}
-    \begin{itemize}
-        \item Team of 3 developed distributed computing app in 24 hours. Honorable mention.
-    \end{itemize}
-\nbdatesubsection{Executive Treasurer, JHU Engineers without Borders}{2006-2009}
-    \begin{itemize}
-        \item Created financial structure for engineering organization with \$100k/yr turnover. 
-        \item Financial oversight for teams operating in 3 developing countries.
-        \item Drafted and presented annual report to Dean of Engineering for continued support. 
-    \end{itemize}
-%\nbdatesubsection{Facebook London Hackathon (Honorable mention)}{Apr 2013} \\
-%\nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012/2013} \\
-%\nbdatesubsection{University of Oxford Student Consultancy}{Winter 2013} \\
-
-
-
-\section{Experience}
-\textbf{Technical}
-%\nblocdatesubsection{University of Oxford}{Oxford, UK}{2010--Present} \\
-%Graduate Research Assistant
-%\begin{itemize}
-%    \item Spearheaded software integration testing and automated documentation efforts, resulting in a dramatic reduction in both scientific and build errors.
-%\end{itemize}
-
-%\textbf{Academia} \\
-%\nblocdatesubsection{University of Oxford}{Oxford, UK}{2010--Present} \\
-%Graduate Research Assistant
 %%\begin{itemize}[leftmargin=*] % No indent on bullets
 %\begin{itemize}
 %\item Molecular simulation of DNA
@@ -134,81 +96,88 @@ Econometrics, corporate finance and strategy coursework.
 %    \end{itemize}
 %\end{itemize}
 
-\nblocdatesubsection{NaturalMotion}{Oxford, UK}{Summer 2013} \\
-Game Engine R\&D
+\nblocdatesubsection{Game Animation Researcher at \href{http://www.naturalmotion.com}{NaturalMotion}}{Oxford, UK}{Summer 2013}
 \begin{itemize}
-\item Took the initiative to communicate highly technical improvements in procedural character animation through intuitive, non-technical live-demos.
-\item Presented work to areas as diverse as production, sales and analytics.
-%\item Agile development in \texttt{C++} with Microsoft toolchain.
+    \item Improved character animation by applying themes from doctoral research.
+    \item Communicated technical improvements through \textbf{non-technical live-demos}.
+    \item Presented demos to areas as diverse as production, sales and analytics.
+    %\item Agile development in \texttt{C++} with Microsoft toolchain.
 \end{itemize}
 
-\nblocdatesubsection{Ginkgo BioWorks}{Boston, MA}{Jan -- May 2010} \\
-Bioengineering Platform Engineering 
+\nblocdatesubsection{Software Bioengineer at \href{http://www.ginkgobioworks.com}{Ginkgo BioWorks}}{Boston, MA}{Jan -- May 2010}
 \begin{itemize}
-\item Exceeded milestone payment requirements worth $\approx6$ months of operations.
-\item \textbf{Led} software integration effort, resulting in the world's first high-throughput DNA assembly pipeline for prototyping engineered biological systems.
-%\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
-%\item Developed web apps to speed up prototyping of engineered biological systems. 
-%\item Exceeded software milestones for payments from industrial partner.
-%\item Collaborated with lab for further pipeline speedups from hardware integration.
-%\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
-%\item Collaborated with lab to quickly iterate builds and do hardware integration.
-%\item Developed \texttt{Django} and \texttt{Ruby on Rails} apps for rapidly prototyping engineered biological systems. Exceeded milestone payment requirements.
-%\item Collaborated directly with lab scientist to develop software specifications, quickly iterate builds and assist with hardware integration.
+    \item Developed software for grant milestone payments worth $\approx6$ months of operations.
+    \item \textbf{Led} software integration effort for high-throughput DNA assembly pipeline.
+    %\item Resulted in the world's first foundry for the rapid prototyping of engineered biological systems.
+    %\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
+    %\item Developed web apps to speed up prototyping of engineered biological systems. 
+    %\item Exceeded software milestones for payments from industrial partner.
+    %\item Collaborated with lab for further pipeline speedups from hardware integration.
+    %\item Developed \texttt{Django} and \texttt{Rails} apps for prototyping engineered biological systems.
+    %\item Collaborated with lab to quickly iterate builds and do hardware integration.
+    %\item Developed \texttt{Django} and \texttt{Ruby on Rails} apps for rapidly prototyping engineered biological systems. Exceeded milestone payment requirements.
+    %\item Collaborated directly with lab scientist to develop software specifications, quickly iterate builds and assist with hardware integration.
 \end{itemize}
 
-\nblocdatesubsection{Ion Torrent Systems}{Guilford, CT}{Summer 2009} \\
-Genomics Instrumentation Optimization
+\nblocdatesubsection{Molecular Biologist at \href{http://www.lifetechnologies.com/uk/en/home/brands/ion-torrent.html}{Ion Torrent Systems}}{Guilford, CT}{Summer 2009}
 \begin{itemize}
-\item Delivered on system optimization milestones for a next-gen sequencing prototype.
-\item Streamlined team workflow by building software to track system performance. 
-\item Eased communication burden, encouraged collaboration through data sharing, avoided repeats, and helped the team design more effective experiments.
-%\item Took the initiative to write an app to track improvements in system performance.
-%\item Wrote desktop \texttt{Pyjamas} app to track improvements in system performance.
-%\item System optimization and benchmarking on a next generation DNA sequencer.
-%\item Wrote desktop \texttt{Pyjamas}/\texttt{PyQT} app to analyse quality and track improvement.
+    \item Contributed to \textbf{team effort} to optimize a DNA sequencing prototype.
+    \item Streamlined team workflow by building software to track system performance. 
+    \item Eased communication burden and encouraged collaboration through data sharing.
+    %\item Eased communication burden and encouraged collaboration through data sharing, avoided repeats, and helped the team design more effective experiments.
+    %\item Took the initiative to write an app to track improvements in system performance.
+    %\item Wrote desktop \texttt{Pyjamas} app to track improvements in system performance.
+    %\item System optimization and benchmarking on a next generation DNA sequencer.
+    %\item Wrote desktop \texttt{Pyjamas}/\texttt{PyQT} app to analyse quality and track improvement.
 \end{itemize}
 
-\nblocdatesubsection{National Institute for Materials Science}{Tsukuba, Japan}{2008} \\
-Organic Polymer Chemistry
+\nblocdatesubsection{Polymer Chemist at \href{http://www.nims.go.jp/eng/}{National Institute for Materials Science}}{Tsukuba, Japan}{Summer 2008}
 \begin{itemize}
-    \item \textbf{Invented} a total synthesize for a novel conducting polymer, resulting in a Japanese patent application and a highly-cited (40+) publication (\href{http://pubs.acs.org/doi/abs/10.1021/ja107444m}{DOI}).
+    \item Invented a total synthesize for a novel conducting polymer, resulting in a Japanese patent application and a highly-cited (40+) publication (\href{http://pubs.acs.org/doi/abs/10.1021/ja107444m}{DOI}).
 %\item Characterization: NMR, MALDI-TOF, ESI-MS and UV/Vis. 1 publication, \href{http://pubs.acs.org/doi/abs/10.1021/ja107444m}{DOI}.
 \end{itemize}
 
-\nblocdatesubsection{Johns Hopkins University}{Baltimore, MD}{2003 -- 2007} \\
-Proteomics Research Developer
+\nblocdatesubsection{Protein Structure Software Researcher at \href{http://www.graylab.jhu.edu}{Johns Hopkins University}}{Baltimore, MD}{2003 -- 2007}
 \begin{itemize}
-%\item \texttt{C++} developer for Rosetta protein structure suite. Analysis tools with \texttt{Perl} and \texttt{R}.
-%\item Implemented model of pH-sensitive regions within proteins.
-\item Built a novel model of pH-sensitive regions within proteins. 1 publication (\href{http://dx.doi.org/10.1016/j.bpj.2012.06.044}{DOI}).
-\item \textbf{Mentored} high school student with interest in protein structure prediction.
-\end{itemize}
-
-%\section{Policy}
-\textbf{Policy} \\
-\nblocdatesubsection{Maryland General Assembly}{Annapolis, MD}{Spring 2009} \\
-Legislative Aide
-\begin{itemize}
-    \item Shepherded 3 bills from conception to passage by coordinating with stakeholders to amend legislation, including the occasional assuaging of angry constituents.
-    \item Succinctly communicated actionable concerns to state delegate through talking points, testimony digests, policy memos and briefings.
-\end{itemize}
-
-\nblocdatesubsection{Baltimore City Health Department}{Baltimore, MD}{Fall 2007} \\
-Health Policy Intern
-\begin{itemize}
-\item Liased across the department to compile and analyse data for the 2008 Baltimore City Health Status Report. 
-\item Wrote reports on drug decriminalization and teen-smoking abatement, including reduction to practice through a youth anti-smoking campaign.
-%\item Aided in the execution of an Influenza monitoring initiative (establishing a quantitative baseline-metric) and a youth anti-smoking campaign (public relations).
-%\item Aided flu monitoring (quantitative) and anti-smoking campaign (public relations).
+    %\item \texttt{C++} developer for Rosetta protein structure suite. Analysis tools with \texttt{Perl} and \texttt{R}.
+    %\item Implemented model of pH-sensitive regions within proteins.
+    \item Built a model of pH-sensitive regions within proteins.
+    %\item Built a model of pH-sensitive regions within proteins. 1 publication (\href{http://dx.doi.org/10.1016/j.bpj.2012.06.044}{DOI}).
+    \item \textbf{Mentored} high school student with interest in protein structure prediction.
 \end{itemize}
 
 
+\pagebreak
+\areasection{\mbox{Non-technical Experience}}
+\nblocdatesubsection{Executive Treasurer at JHU Engineers without Borders}{Baltimore, MD}{2006-2009}
+\begin{itemize}
+        \item Created financial structure for engineering organization with \$100k/yr turnover. 
+        \item \textbf{Financial oversight} for teams operating in 3 developing countries.
+        \item Drafted and presented annual report to Dean of Engineering for continued support. 
+\end{itemize}
+
+\nblocdatesubsection{Legislative Aide at \href{http://www.http://mgaleg.maryland.gov}{Maryland General Assembly}}{Annapolis, MD}{Spring 2009}
+\begin{itemize}
+    \item Shepherded 3 bills from conception to passage by coordinating with \textbf{diverse stakeholders} (e.g. constituents, doctors, hospitals, insurers) to amend legislation.
+    \item Supported state delegate through written testimony digests and oral briefings.
+    %\item Shepherded 3 bills from conception to passage by coordinating with stakeholders to amend legislation, including the occasional assuaging of angry constituents.
+    %\item Succinctly communicated actionable concerns to state delegate through talking points, testimony digests, policy memos and briefings.
+\end{itemize}
+
+\nblocdatesubsection{Health Policy Analyst at \href{http://www.baltimorehealth.org}{Baltimore City Health Department}}{Baltimore, MD}{Fall 2007}
+\begin{itemize}
+    \item Liased across the department to compile and analyse data for the \href{http://wwww.baltimorehealth.org/info/HSR/2008_BaltCityHSR_final.pdf}{2008 Baltimore City Health Status Report}. 
+    \item Wrote reports on drug decriminalization and teen-smoking abatement, including \textbf{reduction to practice} through a youth anti-smoking campaign.
+    %\item Aided in the execution of an Influenza monitoring initiative (establishing a quantitative baseline-metric) and a youth anti-smoking campaign (public relations).
+    %\item Aided flu monitoring (quantitative) and anti-smoking campaign (public relations).
+\end{itemize}
 
 
 
 
-%\section{Extracurricular}
+
+
+%\areasection{Extracurricular}
 %
 %\nbdatesubsection{Facebook London Hackathon}{Apr 2013}
 %    \begin{itemize}
@@ -261,52 +230,84 @@ Health Policy Intern
 
 
 
-\section{Academic}
+\areasection{Academic}
 
-\textbf{Publications} \\
-\textit{Harrison RM}, Romano F, Ouldridge TE, Louis AA, Doye JP. Coarse-grain modelling of extreme DNA bending I: Molecular-vice. In preparation.
+\textbf{Publications}
+\nbdatesubsection{\textit{Harrison RM}, Romano F, Ouldridge TE, Louis AA, Doye JP. Coarse-grain modelling of extreme DNA bending II: Cyclization.}{In preparation}
 
-\textit{Harrison RM}, Romano F, Ouldridge TE, Louis AA, Doye JP. Coarse-grain modelling of extreme DNA bending II: Cyclization. In preparation.
+\nbdatesubsection{\textit{Harrison RM}, Romano F, Ouldridge TE, Louis AA, Doye JP. Coarse-grain modelling of extreme DNA bending I: Molecular-vice.}{In preparation}
 
-Doye JP, Ouldridge TE, Louis AA, Romano F, \v{S}ulc P, Matek C, Snodin BE, Rovigatti L, Schreck JS, \textit{Harrison RM}, Smith WP. Coarse-graining DNA for simulations of DNA nanotechnology. Physical Chemistry Chemical Physics 2013;15(47):20395--20414.
+\nbdatesubsection{\href{http://pubs.rsc.org/en/content/articlehtml/2013/cp/c3cp53545b}{Doye JP, Ouldridge TE, Louis AA, Romano F, \v{S}ulc P, Matek C, Snodin BE, Rovigatti L, Schreck JS, \textit{Harrison RM}, Smith WP. Coarse-graining DNA for simulations of DNA nanotechnology. Physical Chemistry Chemical Physics 2013;15(47):20395--20414.}}{2014}
 
-Sugiyasu K, Honsho Y, \textit{Harrison RM}, Sato A, Yasuda T, Seki S, Takeuchi M. A Self-Threading Polythiophene: Defect-Free Insulated Molecular Wires Endowed with Long Effective Conjugation Length. J. Am. Chem. Soc. 2010 Sep.
+\nbdatesubsection{\href{http://www.sciencedirect.com/science/article/pii/S0006349512007333}{Kilambi KP, Gray JJ. Rapid Calculation of Protein pKa Values Using Rosetta. Biophysical Journal 2012 Aug;103(3):587--595. (Acknowledged for Software Contributions)}}{2012}
+
+\nbdatesubsection{\href{http://http://pubs.acs.org/doi/abs/10.1021/ja107444m}{Sugiyasu K, Honsho Y, \textit{Harrison RM}, Sato A, Yasuda T, Seki S, Takeuchi M. A Self-Threading Polythiophene: Defect-Free Insulated Molecular Wires Endowed with Long Effective Conjugation Length. J. Am. Chem. Soc. 2010 Sep.}}{2010}
 
 
-\textbf{Software contributions} \\
-Kilambi KP, Gray JJ. Rapid Calculation of Protein pKa Values Using Rosetta. Biophysical Journal 2012 Aug;103(3):587--595.
+%\textbf{Software contributions}
+%\nbdatesubsection{Kilambi KP, Gray JJ. Rapid Calculation of Protein pKa Values Using Rosetta. Biophysical Journal 2012 Aug;103(3):587--595.}{2012}
 
-\textbf{Recent Scientific Communication} \\
-Theoretical Chemistry Group Graduate Student Meeting, London, 30 Apr 2014. \\
-CECAM: Biological molecules under non-natural conditions, Stuttgart, 10--12 Mar 2014 \\
-Softbio Day, Oxford Center for Soft and Biological Matter, Oxford, 17 Apr 2013.
-National Institutes of Health Research Fesival, Bethesda MD, 9--12 Oct 2012 
+\textbf{Recent Scientific Communication}
+\nbdatesubsection{Theoretical Chemistry Group Graduate Student Meeting (London, UK)}{30 Apr 2014}
+\nbdatesubsection{CECAM: Biological molecules under non-natural conditions (Stuttgart, DE)}{10--12 Mar 2014}
+\nbdatesubsection{Softbio Day, Oxford Center for Soft and Biological Matter (Oxford, UK)}{17 Apr 2013}
+\nbdatesubsection{National Institutes of Health Research Fesival (Bethesda, MD)}{9--12 Oct 2012}
+
+\textbf{Awards for Scientific Communication}
+\nbdatesubsection{\href{http://blogs.it.ox.ac.uk/oxtalent/2012/06/21/best-infographic/}{oxTalent Infographic Award} <10\%}{2012}
+\nbdatesubsection{NIH Graduate Research Award for Poster Presentation <10\%}{2011}
 
 %\textbf{Technical Skills Training} \\
 %\nbdatesubsection{CECAM Molecular Simulation Course}{6--18 Jan 2013} \\
 %\nbdatesubsection{Marine Biological Lab Optical Microscopy Course}{11--21 Oct 2011}
 
+\areasection{Extracurricular}
+%\textbf{Demonstrated interest in the Business} \\
+%Familiarity with corporate financial reporting (e.g. can read an SEC 10-Q/K) \\
+%Econometrics, corporate finance and strategy coursework.
+\nbdatesubsection{Oxford Student Consultancy Project}{Jan--Mar 2013}
+    \begin{itemize}
+        \item Team of 4 helped local non-profit identify root causes of membership decline.
+    \end{itemize}
 
-\section{Honors}
-\textbf{Scientific Communication}
-\begin{itemize}
-    \item \nbdatesubsection{oxTalent Infographic Award <10\%}{2012}
-    \item \nbdatesubsection{NIH Graduate Research Award for Poster Presentation <10\%}{2011}
-\end{itemize}
-\textbf{Fellowships \& Prizes}
-\begin{itemize}
-    \item \nbdatesubsection{NIH-Oxford Scholar <10\%}{2010}
-    \item \nbdatesubsection{National Science Foundation Graduate Research Fellow <10\%}{2010}
-    \item \nbdatesubsection{Inductee, National Gallery for America's Young Inventors <1\%}{2006}
-    \item \nbdatesubsection{5th Place, Intel Science Talent Search <1\%}{2005}
-        \begin{itemize}
-            \item Dubbed the `junior nobel prize.' First from Baltimore City in 50 years.
-        \end{itemize}
-\end{itemize}
+\nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012--2013}
+%    \begin{itemize}
+%            \item Finance, strategy, valuation, legal and IP coursework.
+%    \end{itemize}
+\nbdatesubsection{Venture Capital and Biotech Conference Volunteer}{May/Sept 2012}
+    \begin{itemize}
+        \item Supported conference activities to gain exposure to biotech funding ecosystem.
+    \end{itemize}
+%\nbdatesubsection{Mid-Atlantic Biotech Conference (Volunteer)}{Sept 2012}
+%\nbdatesubsection{Mid-Atlantic Venture Association Capital Connection (Volunteer)}{May 2012}
+%\nbdatesubsection{NIH Science Policy Group}{2011/2012} 
+%\nbdatesubsection{Macroeconomics capstone project on alternate GDP measures.}{2009}
+\nbdatesubsection{Facebook London Hackathon}{Apr 2013}
+    \begin{itemize}
+        \item Team of 3 developed distributed computing app in 24 hours. Honorable mention.
+    \end{itemize}
+%\nbdatesubsection{Facebook London Hackathon (Honorable mention)}{Apr 2013} \\
+%\nbdatesubsection{Sa\"\i d Business School Building a Business Course}{2012/2013} \\
+%\nbdatesubsection{University of Oxford Student Consultancy}{Winter 2013} \\
 
+
+%\areasection{Awards}
+%\textbf{Scientific Communication}
+%\nbdatesubsection{\href{http://blogs.it.ox.ac.uk/oxtalent/2012/06/21/best-infographic/}{oxTalent Infographic Award} <10\%}{2012}
+%\nbdatesubsection{NIH Graduate Research Award for Poster Presentation <10\%}{2011}
+%
+%\textbf{Fellowships \& Prizes}
+%\nbdatesubsection{\href{http://www.nsfgrfp.org}{National Science Foundation Graduate Research Fellow} <10\%}{2010}
+%\nbdatesubsection{\href{http://oxcam.gpp.nih.gov}{NIH-Oxford Scholar} <10\%}{2010}
+%\nbdatesubsection{\href{http://www.nmoe.org/gallery/2006/harrison.htm}{Inductee}, \href{http://www.nmoe.org/gallery/}{National Gallery for America's Young Inventors} <1\%}{2006}
+%\nbdatesubsection{\href{http://sciserv.org/sts/64sts/winners.asp}{5th Place}, \href{https://student.societyforscience.org/intel-sts}{Intel Science Talent Search} <1\%}{2005}
+%    \begin{itemize}
+%        \item Dubbed the `junior nobel prize.' First from Baltimore City in 50 years. [\href{http://pages.jh.edu/~jhumag/0605web/scholar.html}{Media}]
+%    \end{itemize}
+%
 % Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
 
-%\section{Skills}
+%\areasection{Skills}
 %\textbf{Scientific software developer} \\
 %\begin{tabular}{l p{3in}}
 %    Speciality & Force-field based biomolecule simulation \\
@@ -334,7 +335,7 @@ National Institutes of Health Research Fesival, Bethesda MD, 9--12 Oct 2012
 %\end{tabular}
 
 
-\section{Hobby}
+\areasection{Hobby}
 Bow tie maker \quad\textbullet\quad Allotment gardener \quad\textbullet\quad Theater light tech
 %bow ties / allotment gardening / technical theater (lighting)
 %bow ties $\bullet$ allotment gardening $\bullet$ light design $\bullet$ technical theater
