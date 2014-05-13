@@ -277,7 +277,7 @@
 % unless you really understand all of this but it is not
 % hard.  Either way, it can only be executed once
 %
-\def\sectionfont{\sf\large}
+\def\sectionfont{\normalsize} % RMH
 \newdimen\sectionwidth
 \newskip\sectionskip
 \newdimen\resumewidth
@@ -788,7 +788,7 @@
 \topmargin 0pt
 \headheight 0pt
 \headsep 0pt
-\textheight 9in
+\textheight 8.25in %RMH
 \parindent 0pt
 \topmargin 0in
 \oddsidemargin 0pt
